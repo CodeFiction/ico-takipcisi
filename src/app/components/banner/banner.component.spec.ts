@@ -1,4 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { DebugElement } from '@angular/core';
+import { By } from '@angular/platform-browser';
 
 import { BannerComponent } from './banner.component';
 
@@ -8,9 +10,8 @@ describe('BannerComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BannerComponent ]
-    })
-    .compileComponents();
+      declarations: [BannerComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -21,5 +22,12 @@ describe('BannerComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should display link to project readme', () => {
+    const linkElement: DebugElement = fixture.debugElement.query(By.css('.ico-link'));
+
+    expect(linkElement.nativeElement.getAttribute('href'))
+      .toBe('https://github.com/codefiction/ico-takipcisi/blob/master/README.md');
   });
 });
