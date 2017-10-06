@@ -1,27 +1,36 @@
-# IcoTakipcisi
+# ICO Takipçisi
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.4.
+Bu uygulama [Codefiction](http://www.codefiction.tech) ekibi tarafından açık kaynak kodlu olarak geliştirilmiştir. Kayıtlı firma ya da projelerden Codefiction ya da bu projenin bakımını yapan kişiler "kesinlikle" sorumlu değildir. 
 
-## Development server
+### Amaç
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Bu uygulamanın amacı, Türkiye'den ICO'ya girip bitirmiş (past), girecek (upcoming) ve şu an ICO'da bulunan (current) uygulamaları tek bir yerde toplamaktır.
 
-## Code scaffolding
+### Nasıl dahil olabilirim?
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Codefiction altındaki bu projeyi kendi hesabınıza fork'layıp, [json](#) dosyasına ICO projenizi ekledikten sonra bize PR atabilir veya proje isminizi, kısa bir tanıtım yazısını ve icotracker.net linkini [Codefiction Twitter](https://twitter.com/codefictiontech) hesabından iletişime geçerek iletebilirsiniz.
 
-## Build
+# Geliştirme
+### Çalıştırma
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+    npm install
 
-## Running unit tests
+    npm start
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Yeni bileşen ekleme
 
-## Running end-to-end tests
+    ng generate component bilesen-ismi
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+> Yeni bileşen ekler.
 
-## Further help
+### Derleme
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+    npm build
+
+### Birim testleri çalıştırmak
+
+    npm test
+
+### Uçtan uca (end-to-end) testleri çalıştırmak
+
+    npm e2e
